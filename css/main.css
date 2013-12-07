@@ -161,7 +161,7 @@ body {
 p { margin-top: 0px; }
 
 article header h1 { display: none; }
-article header { margin: 30px auto 20px auto; }
+article header { margin: 40px 0px 20px 0px; }
 article header .name {
     font-size: 1em;
     display: block;
@@ -169,7 +169,7 @@ article header .name {
     background-color: black;
     margin: 0 20px 8px 20px;
 }
-
+article header img { width: 300px; height: 79px; }
 article section img {
     float: left;
     width: 6em;
@@ -179,7 +179,7 @@ article section img {
     margin-right: 15px;
     margin-bottom: 35px;
 }
-section, header {
+section {
     padding: 2em;
 }
 
@@ -206,7 +206,17 @@ section, header {
 }
 
 
+aside#tweets {
+    padding: 1.5em;
+}
 
+aside article {
+    padding: 0.8em;
+    border: 1px solid #f1c40f;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background-color: #f7cf30;
+}
 
 
 
