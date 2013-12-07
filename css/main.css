@@ -146,6 +146,9 @@ nav[role=navigation] li a {
     border-bottom: 1px solid #e9c019;
 }
 
+nav[role=navigation] li a:hover {
+    background-color: #f7cf30;
+}
 
 
 body {
