@@ -103,6 +103,9 @@ textarea {
 
 
 
+a {
+    color: #fff4c8;
+}
 
 .header-container {
     text-align: center;
@@ -206,11 +209,11 @@ section {
 }
 
 
-aside#tweets {
+#tweets {
     padding: 1.5em;
 }
 
-aside article {
+#tweets article {
     padding: 0.8em;
     border: 1px solid #f1c40f;
     border-radius: 5px;
@@ -218,7 +221,14 @@ aside article {
     background-color: #f7cf30;
 }
 
+#tweets article img {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
 
+.footer-container footer p { text-align: center; }
 
 
 
