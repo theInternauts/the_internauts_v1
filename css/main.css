@@ -104,7 +104,11 @@ textarea {
 
 
 
-.header-container { text-align: center; }
+.header-container {
+    text-align: center;
+    border-bottom: 1px solid #e9c019;
+    background-color: #f7cf30;
+}
 a.menu-link {
     /*float: right;*/
     display: block;
@@ -112,7 +116,7 @@ a.menu-link {
 }
 nav[role=navigation] {
     clear: both;
-    -webkit-transition: all 0.3s ease-out;  
+    -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -124,43 +128,65 @@ nav[role=navigation] {
 }
 nav[role=navigation].active {
     max-height: 15em;
+    background-color: #e9c019;
 }
 nav[role=navigation] ul {
     margin: 0;
     padding: 0;
-    border-top: 1px solid #808080;
+    border-top: 1px solid #e9c019;
+}
+nav[role=navigation] a, .menu-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 nav[role=navigation] li a {
     display: block;
     padding: 0.8em;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid #e9c019;
 }
 
 
 
-html {
+body {
     font-family: "Open Sans";
     background-color: #f1c40f;
     color: #000;
+    font-size: 0.8em;
 }
 
-article header { margin: 0px auto 60px auto; }
+p { margin-top: 0px; }
+
+article header h1 { display: none; }
+article header { margin: 30px auto 20px auto; }
 article header .name {
-    font-size: 2em;
+    font-size: 1em;
     display: block;
     color: black;
     background-color: black;
     margin: 0 20px 8px 20px;
 }
 
+article section img {
+    float: left;
+    width: 6em;
+    height: 6em;
+    margin-top: 1.7em;
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
 section, header {
-    padding: 1.3em;
+    padding: 2em;
 }
 
-#contact { background-color: #fff; }
+#contact {
+    background-color: #e9c019;
+    font-size: 0.9em;
+ }
 
 #contact ul { list-style: none; margin: 0px; }
-#contact ul li a {    
+#contact ul li a {
     display: block;
     float: left;
     background-image: url(https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png);  /* shows image */
@@ -315,7 +341,7 @@ section, header {
         border: 0;
     }
 
-    
+
 }
 
 @media print,
