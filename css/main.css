@@ -192,34 +192,48 @@ section {
     font-size: 0.9em;
  }
 
+#contact div#icon_holder {
+    text-align: center;
+}
+
 #contact ul { 
     list-style: none;
-    margin: 0 auto 20px auto;
-    padding: 0px;
+    margin: 0 auto;
     text-align: center;
+    background-color: #f1c40f;
+    border-radius: 7px;
+    padding: 0.4em;
+    display: inline-block;
 }
 
 #contact ul li {
     border-radius: 7px;
     overflow: hidden;
     display: inline-block;
+    font-size: 3em;
+    border: 1px solid #E6BB10;
 }
 
 #contact ul li a {
     display: block;
+    text-decoration: none;
     float: left;
-    background-image: url(https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png);  /* shows image */
+    /*background-image: url(https://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png);  /* shows image */*/
     background-size: 50px 50px;
     background-repeat:no-repeat;
     background-position: center;
-    height: 50px;                        /* be sure to set height & width */
-    width:  50px;
+    height: 35px;                        /* be sure to set height & width */
+    width:  35px;
 
     /* Hide the text. */
-    text-indent: 101%;
+    /*text-indent: 101%;*/
     white-space: nowrap;
     overflow: hidden;
+    letter-spacing: 20px;
+    margin: 11px;
 }
+#contact ul li a:first { margin-left: 14px; }
+#contact ul li a:last { margin-right: 14px; } 
 
 #blurb {
     margin-bottom: 100%;
@@ -246,11 +260,78 @@ section {
     height: 30px;
 }
 
+#qualities { 
+    background-color: #e9c019;
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 0px;
+}
+
+#qualities_cloud, #skills ul { 
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+#qualities_cloud li, #skills ul li {
+    display: inline-block;
+    padding-right: 5px;
+} 
+
+#skills h2 {
+    margin-top: 0px;
+}
+.light-cloud { color: #f7cf30; }
+
 .footer-container footer p { text-align: center; }
 
+/* Contact section */
 
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+font-family: 'icomoon';
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
 
+.icon-github:before {
+content: "\e601";
+}
+
+.icon-linkedin:before {
+content: "\e600";
+}
+
+.icon-twitter:before {
+content: "\e602";
+}
+
+.icon-envelop:before {
+content: "\e603";
+}
+
+.icon-phone:before {
+content: "\e604";
+}
 
 
 
