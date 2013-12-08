@@ -204,6 +204,7 @@ section {
     border-radius: 7px;
     padding: 0.4em;
     display: inline-block;
+    border: 1px solid #E6BB10;
 }
 
 #contact ul li {
@@ -211,7 +212,7 @@ section {
     overflow: hidden;
     display: inline-block;
     font-size: 3em;
-    border: 1px solid #E6BB10;
+
 }
 
 #contact ul li a {
