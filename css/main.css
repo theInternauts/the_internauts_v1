@@ -105,6 +105,7 @@ textarea {
 
 a {
     color: #fff4c8;
+    display: block;
 }
 
 .header-container {
@@ -191,7 +192,19 @@ section {
     font-size: 0.9em;
  }
 
-#contact ul { list-style: none; margin: 0px; }
+#contact ul { 
+    list-style: none;
+    margin: 0 auto 20px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+#contact ul li {
+    border-radius: 7px;
+    overflow: hidden;
+    display: inline-block;
+}
+
 #contact ul li a {
     display: block;
     float: left;
@@ -206,6 +219,11 @@ section {
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
+}
+
+#blurb {
+    margin-bottom: 100%;
+    text-align: justify;
 }
 
 
