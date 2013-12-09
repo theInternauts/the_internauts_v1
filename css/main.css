@@ -113,6 +113,9 @@ a {
     border-bottom: 1px solid #e9c019;
     background-color: #f7cf30;
 }
+
+.main-container { min-width: 300px; }
+
 a.menu-link {
     /*float: right;*/
     display: block;
@@ -165,7 +168,10 @@ body {
 p { margin-top: 0px; }
 
 article header h1 { display: none; }
-article header { margin: 40px 0px 20px 0px; }
+article header { 
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
 article header .name {
     font-size: 1em;
     display: block;
@@ -245,6 +251,8 @@ section {
 #tweets {
     padding: 1.5em;
 }
+
+#tweets h3 { margin-top: 0px; }
 
 #tweets article {
     padding: 0.8em;
@@ -464,8 +472,26 @@ content: "\e604";
         border: 0;
     }
 
+    #blurb {
+        margin-bottom: 0px;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+
+
 
 }
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (min-width: 35em) {
+
+}
+
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
