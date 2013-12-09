@@ -99,9 +99,14 @@ textarea {
 
 /* Regular */
 
+article.force-block { text-align: center; }
 
-
-
+section.force-block, header.force-block, div.force-block {
+    width: 50%;
+    max-width: 350px;
+    margin:0 auto;
+}
+div.force-block { text-align: left;  }
 
 a {
     color: #fff4c8;
