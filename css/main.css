@@ -113,6 +113,8 @@ a {
     display: block;
 }
 
+a:hover { color: #000000; }
+
 .header-container {
     text-align: center;
     border-bottom: 1px solid #e9c019;
@@ -173,7 +175,7 @@ body {
 p { margin-top: 0px; }
 
 article header h1 { display: none; }
-article header { 
+article header {
     margin: 40px 0px 20px 0px;
     text-align: center;
 }
@@ -203,7 +205,7 @@ section {
     font-size: 0.9em;
  }
 
-#contact ul.points { 
+#contact ul.points {
     padding-left: 1.4em;
 }
 
@@ -211,7 +213,7 @@ section {
     text-align: center;
 }
 
-#contact ul.icons { 
+#contact ul.icons {
     list-style: none;
     margin: 0 auto;
     text-align: center;
@@ -249,7 +251,7 @@ section {
     margin: 11px;
 }
 #contact ul.icons li a:first { margin-left: 14px; }
-#contact ul.icons li a:last { margin-right: 14px; } 
+#contact ul.icons li a:last { margin-right: 14px; }
 
 #blurb {
     /*margin-bottom: 100%;*/
@@ -278,7 +280,7 @@ section {
     height: 30px;
 }
 
-#qualities { 
+#qualities {
     background-color: #e9c019;
     font-family: 'Arial Black';
     font-weight: bold;
@@ -286,7 +288,7 @@ section {
     padding-top: 0px;
 }
 
-#qualities_cloud, #skills ul { 
+#qualities_cloud, #skills ul {
     margin: 0px;
     list-style: none;
     padding: 0px;
@@ -297,7 +299,7 @@ section {
 #qualities_cloud li, #skills ul li {
     display: inline-block;
     padding-right: 5px;
-} 
+}
 
 #skills h2 {
     margin-top: 0px;
