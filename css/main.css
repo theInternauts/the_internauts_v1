@@ -198,11 +198,15 @@ section {
     font-size: 0.9em;
  }
 
+#contact ul.points { 
+    padding-left: 1.4em;
+}
+
 #contact div#icon_holder {
     text-align: center;
 }
 
-#contact ul { 
+#contact ul.icons { 
     list-style: none;
     margin: 0 auto;
     text-align: center;
@@ -213,7 +217,7 @@ section {
     border: 1px solid #E6BB10;
 }
 
-#contact ul li {
+#contact ul.icons li {
     border-radius: 7px;
     overflow: hidden;
     display: inline-block;
@@ -221,7 +225,7 @@ section {
 
 }
 
-#contact ul li a {
+#contact ul.icons li a {
     display: block;
     text-decoration: none;
     float: left;
@@ -239,11 +243,11 @@ section {
     letter-spacing: 20px;
     margin: 11px;
 }
-#contact ul li a:first { margin-left: 14px; }
-#contact ul li a:last { margin-right: 14px; } 
+#contact ul.icons li a:first { margin-left: 14px; }
+#contact ul.icons li a:last { margin-right: 14px; } 
 
 #blurb {
-    margin-bottom: 100%;
+    /*margin-bottom: 100%;*/
     text-align: justify;
 }
 
@@ -474,9 +478,9 @@ content: "\e604";
 
     #blurb {
         margin-bottom: 0px;
-        padding-left: 5em;
-        padding-right: 5em;
     }
+
+    section { padding: 5em; }
 
 
 
