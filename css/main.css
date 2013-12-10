@@ -285,7 +285,18 @@ section {
 #skills h2 {
     margin-top: 0px;
 }
-.light-cloud { color: #f7cf30; }
+
+.light-cloud { 
+    color: #f7cf30;
+    transition: color 2s;
+    -webkit-transition: color 2s;
+}
+
+.dark-cloud {    
+    color: #000000;
+    transition: color 2s;
+    -webkit-transition: color 2s;
+}
 
 .footer-container footer p { text-align: center; }
 
