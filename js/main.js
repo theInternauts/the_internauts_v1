@@ -9,4 +9,6 @@ $(document).ready(function() {
 		$menu.toggleClass('active')
 		return false
 	})
+
+	$(document).fader_block()
 });
