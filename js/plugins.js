@@ -29,13 +29,14 @@
         var count = list.length-1
         console.log("count", count)
         var randomNumber = Math.floor(Math.random()*10)
-        list[randomNumber].setAttribute('class', 'light-cloud')
+        list[randomNumber].setAttribute('class', settings.initialAction)
         return this
     }// end $.fn.fader_block()
 
 
     $.fn.fader_block.defaults = {
-
+        initialAction: 'light-cloud',
+        revertAction: 'dark-cloud'
     }
 }())
 
