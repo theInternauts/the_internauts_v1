@@ -26,13 +26,22 @@
         var settings = $.extend( true, {}, $.fn.fader_block.defaults, options )
         
         var list = $('#qualities_cloud li')
-        var count = list.length-1
+        var count = list.length
         console.log("count", count)
-        var randomNumber = Math.floor(Math.random()*10)
+        console.log("array: ", buildNumArray(5, count))
+
+        var randomNumber = Math.floor(Math.random()*count)
         list[randomNumber].setAttribute('class', settings.initialAction)
         return this
     }// end $.fn.fader_block()
 
+    function buildNumArray( number, upperBound ){
+        var numArray = new Array(number)
+        for(var i =0; i < numArray.length; i++){
+            numArray[i] = Math.floor(Math.random()*upperBound)
+        }
+        return numArray
+    }
 
     $.fn.fader_block.defaults = {
         initialAction: 'light-cloud',
