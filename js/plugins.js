@@ -21,7 +21,7 @@
     }
 }());
 
-;(function(){
+;(function( $, window, document, undefined ){
     $.fn.fader_block = function( options ){
         var settings = $.extend( true, {}, $.fn.fader_block.defaults, options )
 
@@ -39,7 +39,6 @@
     }
 
     function fader_cycle( settings ){
-        console.log("fader_cycled!!!")
         var list = $(settings.selector)
 
         list.addClass(settings.revertAction)
@@ -57,6 +56,6 @@
         selectionCount: 4,
         interval: 3000
     }
-}())
+}( jQuery, window, document ))
 
 // Place any jQuery/helper plugins in here.
