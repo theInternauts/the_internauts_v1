@@ -24,14 +24,9 @@
 ;(function(){
     $.fn.fader_block = function( options ){
         var settings = $.extend( true, {}, $.fn.fader_block.defaults, options )
-        
-        var list = $('#qualities_cloud li')
-        var count = list.length
-        console.log("count", count)
-        console.log("array: ", buildNumArray(5, count))
 
-        var randomNumber = Math.floor(Math.random()*count)
-        list[randomNumber].setAttribute('class', settings.initialAction)
+        window.setInterval(function(){fader_cycle(settings)},settings.interval)
+        
         return this
     }// end $.fn.fader_block()
 
@@ -43,9 +38,24 @@
         return numArray
     }
 
+    function fader_cycle( settings ){
+        console.log("fader_cycled!!!")
+        var list = $(settings.selector)
+
+        list.addClass(settings.revertAction)
+        list.removeClass(settings.initialAction)
+        selectiedPositions = buildNumArray(settings.selectionCount, list.length)
+        for(var i = 0; i < selectiedPositions.length; i++){
+            list[selectiedPositions[i]].setAttribute('class', settings.initialAction)
+        }
+    }
+
     $.fn.fader_block.defaults = {
         initialAction: 'light-cloud',
-        revertAction: 'dark-cloud'
+        revertAction: 'dark-cloud',
+        selector: '#qualities_cloud li',
+        selectionCount: 4,
+        interval: 3000
     }
 }())
 
