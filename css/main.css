@@ -173,7 +173,13 @@ article header .name {
     background-color: black;
     margin: 0 20px 8px 20px;
 }
-article header img { width: 300px; height: 79px; }
+article header img { 
+    width: 300px;
+    height: 79px;
+    margin: 0 auto;
+    display: block;
+
+ }
 article section img {
     float: left;
     width: 6em;
@@ -280,6 +286,7 @@ section {
 #qualities_cloud li, #skills ul li {
     display: inline-block;
     padding-right: 5px;
+    font-size: 1.5em;
 } 
 
 #skills h2 {
