@@ -21,7 +21,6 @@
     }
 }());
 
-
 ;(function( $, window, document, undefined ){
     $.fn.fader_block = function( options ){
         var settings = $.extend( true, {}, $.fn.fader_block.defaults, options )
@@ -58,6 +57,5 @@
         interval: 3000
     }
 }( jQuery, window, document ))
-
 
 // Place any jQuery/helper plugins in here.

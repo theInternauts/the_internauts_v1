@@ -295,14 +295,14 @@ section {
 
 .light-cloud { 
     color: #f7cf30;
-    transition: color 2s;
-    -webkit-transition: color 2s;
+    transition: color 3s;
+    -webkit-transition: color 3s;
 }
 
 .dark-cloud {    
     color: #000000;
-    transition: color 2s;
-    -webkit-transition: color 2s;
+    transition: color 3s;
+    -webkit-transition: color 3s;
 }
 
 .footer-container footer p { text-align: center; }
